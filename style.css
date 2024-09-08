@@ -1,0 +1,173 @@
+body {
+    height: 100vh;
+}
+
+.content-wrapper {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.image-wrapper {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.item {
+    margin: 5px;
+    flex-basis: 350px;
+    position: relative;
+}
+
+.text {
+    font-family: "Ubuntu Sans", sans-serif;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    font-size: 40px;
+    color: white;
+}
+
+img {
+    width: 350px;
+    height: 370px;
+    border-radius: 50px;
+    filter: brightness(80%);
+}
+
+.content-wrapper h3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.content-wrapper h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.content-wrapper h1,h3 {
+    font-family: "Ubuntu Sans", sans-serif;
+    
+}
+
+.content-wrapper p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* phones and portrait tablets */
+@media (min-width: 375px) and (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+
+    .content-wrapper {
+        height: 15%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .content-wrapper h1 {
+        text-align: center;
+    }
+
+    .image-wrapper {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .text {
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+    }
+    
+
+}
+
+/* landscape tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        height: 100%;
+    }
+
+    .content-wrapper {
+        height: 25%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper h1 {
+        text-align: center;
+    }
+
+    .image-wrapper {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        margin: 5px;
+        flex-basis: 350px;
+        position: relative;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+    }
+
+}
+
+/* laptops and desktops */
+@media (min-width: 1300px) {
+    body {
+        height: 100vh;
+    }
+    
+    .content-wrapper {
+        height: 45vh;
+        width: 100%;
+    }
+    
+    .image-wrapper {
+        height: 55vh;
+        width: 100%;
+    }
+
+    .item {
+        margin: 5px;
+        flex-basis: 350px;
+        position: relative;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 230px;
+        left: 40px;
+    }
+}
+
+
