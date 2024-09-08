@@ -160,14 +160,21 @@ img {
 
     .item {
         margin: 5px;
-        flex-basis: 350px;
+        flex-basis: 270px;
         position: relative;
     }
 
     .text {
         position: absolute;
-        bottom: 230px;
+        bottom: 300px;
         left: 40px;
+    }
+
+    img {
+        width: 280px;
+        height: 280px;
+        border-radius: 50px;
+        filter: brightness(80%);
     }
 }
 
